@@ -331,6 +331,33 @@ footer a:hover {
   color: white;
 }
 
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s infinite linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  cursor: pointer;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 /* Media Query */
 /* Laptop */
 @media (max-width: 992px) {
@@ -404,6 +431,15 @@ footer a:hover {
   .simply-countdown > .simply-section {
     padding: 40px;
     margin: 2px;
+  }
+
+  .home {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .home .emily {
+    margin-top: 5rem;
   }
 
   .timeline {
